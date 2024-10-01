@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Beauty Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding-top: 56px;
+            background-color: #f8f9fa;
+        }
+        .category-card {
+            margin-bottom: 20px;
+        }
+        .category-image {
+            height: 200px;
+            object-fit: cover;
+        }
+        .navbar{
+            background-color: lavender;
+        }
+        .footer {
+            width: 100%;
+            background-color: lavender;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+        <a class="navbar-brand" href="#">GlamorGlow</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="category.html">Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="edituser.html">Edit Profile</a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="guest.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Categories Section -->
+    <div class="container mt-5">
+        <h2 class="text-center">Product Categories</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 category-card">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top category-image" alt="Skin Care">
+                    <div class="card-body">
+                        <h5 class="card-title">Skin Care</h5>
+                        <a href="products.html?category=skin-care" class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 category-card">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3892675/pexels-photo-3892675.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top category-image" alt="Hair Care">
+                    <div class="card-body">
+                        <h5 class="card-title">Hair Care</h5>
+                        <a href="products.html?category=hair-care" class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 category-card">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top category-image" alt="Makeup">
+                    <div class="card-body">
+                        <h5 class="card-title">Makeup</h5>
+                        <a href="products.html?category=makeup" class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more category cards as needed -->
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 GlamorGlow. All rights reserved.</p>
+    </div>
+</body>
+</html>
